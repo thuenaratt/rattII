@@ -80,8 +80,9 @@
               <!-- <div>{{ product.title}}</div> -->
               <div class="relative flex items-end overflow-hidden rounded-xl">
                 <img
-                  src="https://cimgr.thebeaulife.co/cimg/f_jpg,w_450,c_fit/img/innisfree_Green_Tea_Line_New_Formula_Singapore_(4).jpg"
-                  alt="">
+                  :src="product.imageUrl"
+                  alt=""
+                  onerror="this.onerror=null; this.src='/PlaceholderImg.png'">
                 <img :src="product.imageUrl" alt="Hotel Photo" />
                 <div
                   class="absolute inset-0 flex items-center justify-center transition duration-300 bg-black bg-opacity-50 opacity-0 hover:opacity-100">
