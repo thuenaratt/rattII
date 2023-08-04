@@ -24,7 +24,7 @@
             <div class="row" v-for="item,index in data" :key="index">
                 <div class="col-sm-5">
                     <div class="image">
-                        <img :src="item.image" onerror="this.onerror=null; this.src='public/PlaceholderImg.png'"
+                        <img :src="item.image" onerror="this.onerror=null; this.src='/PlaceholderImg.png'"
                             class="card-img-top" alt="...">
                     </div>
                     <div class="p-3">
