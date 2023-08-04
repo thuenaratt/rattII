@@ -127,7 +127,7 @@
                             <!-- <p class="mt-1 text-sm text-slate-400">Lisbon, Portugal</p> -->
 
                             <div class="flex items-end justify-between mt-3">
-                                <p class="text-lg font-bold text-[#826B9F]">$850</p>
+                                <p class="text-lg font-bold text-[#df4c4c]">$10</p>
                             </div>
                         </div>
                     </a>
@@ -170,7 +170,7 @@
                             <!-- <p class="mt-1 text-sm text-slate-400">Lisbon, Portugal</p> -->
 
                             <div class="flex items-end justify-between mt-3">
-                                <p class="text-lg font-bold text-[#826B9F]">$850</p>
+                                <p class="text-lg font-bold text-[#e65c5c]">$9</p>
                             </div>
                         </div>
 
@@ -206,7 +206,7 @@
                             <p class="mt-1 text-sm text-slate-400">Lisbon, Portugal</p>
 
                             <div class="flex items-end justify-between mt-3">
-                                <p class="text-lg font-bold text-[#826B9F]">$450</p>
+                                <p class="text-lg font-bold text-[#d25a5a]">$8</p>
                             </div>
                         </div>
                     </a>
@@ -219,7 +219,7 @@
                             <img src="https://img.shoplineapp.com/media/image_clips/62f3d6796d36e800225a44c4/original.jpeg?1660147320"
                                 alt="Hotel Photo" />
                             <div
-                                class="flex items-center space-x-1.5 rounded-lg bg-[#826B9F] hover:bg-[#B0A3C0] px-4 py-1.5 text-white duration-100">
+                                class="flex items-center space-x-1.5 rounded-lg bg-[#da5252] hover:bg-[#B0A3C0] px-4 py-1.5 text-white duration-100">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                     stroke="currentColor" class="w-4 h-4">
                                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -251,7 +251,7 @@
                             <p class="mt-1 text-sm text-slate-400">Lisbon, Portugal</p>
 
                             <div class="flex items-end justify-between mt-3">
-                                <p class="text-lg font-bold text-[#826B9F]">$450</p>
+                                <p class="text-lg font-bold text-[#b64648]">$4</p>
                             </div>
                         </div>
                     </a>
@@ -295,7 +295,7 @@
                             <p class="mt-1 text-sm text-slate-400">Lisbon, Portugal</p>
 
                             <div class="flex items-end justify-between mt-3">
-                                <p class="text-lg font-bold text-[#826B9F]">$450</p>
+                                <p class="text-lg font-bold text-[#bb4040]">$11</p>
                             </div>
                         </div>
                     </a>
@@ -328,7 +328,7 @@
                             <p class="mt-1 text-sm text-slate-400">Lisbon, Portugal</p>
 
                             <div class="flex items-end justify-between mt-3">
-                                <p class="text-lg font-bold text-[#826B9F]">$450</p>
+                                <p class="text-lg font-bold text-[#c34444]">$13</p>
                             </div>
                         </div>
                     </a>
@@ -361,7 +361,7 @@
                             <p class="mt-1 text-sm text-slate-400">Lisbon, Portugal</p>
 
                             <div class="flex items-end justify-between mt-3">
-                                <p class="text-lg font-bold text-[#826B9F]">$450</p>
+                                <p class="text-lg font-bold text-[#b64040]">$12</p>
                             </div>
                         </div>
                     </a>
@@ -397,7 +397,7 @@
                             <p class="mt-1 text-sm text-slate-400">Lisbon, Portugal</p>
 
                             <div class="flex items-end justify-between mt-3">
-                                <p class="text-lg font-bold text-[#826B9F]">$450</p>
+                                <p class="text-lg font-bold text-[#dc4242]">$11.5</p>
                             </div>
                         </div>
                     </a>
