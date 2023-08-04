@@ -1,8 +1,7 @@
 <template>
-  <div class="container h-full max-w-md mx-auto overflow-hidden bg-white rounded-lg shadow xl:max-w-3xl">
-    <div class="relative hidden h-full xl:block xl:w-1/2">
-      <img class="absolute object-cover w-full h-auto" src="https://images.unsplash.com/photo-1541233349642-6e425fe6190e"
-        alt="my zomato" />
+  <div class="container flex items-center justify-center h-full min-h-screen px-5 py-5 mx-auto overflow-hidden bg-white rounded-lg shadow min-w-md xl:mix-w-3xl min-w-screen">
+    <div class="relative hidden w-full h-full xl:block xl:w-1/2 md:flex">
+      <img class="object-cover w-full h-auto " src="../assets/Screenshot 2023-08-04 215026.png" alt="my zomato" />
     </div>
     <div class="w-full p-8 xl:w-1/2">
       <form method="post" action="#" onSubmit="return false">
@@ -35,11 +34,14 @@
           </a>
         </div>
         <div class="flex w-full mt-8">
-          <button
-            class="w-full h-10 px-4 py-2 text-sm font-semibold text-white bg-gray-800 rounded hover:bg-grey-900 focus:outline-none focus:shadow-outline"
+          <router-link to="/">
+            <button
+            class="w-full h-10 px-4 py-2 text-sm font-semibold text-white bg-red-500 rounded hover:bg-grey-900 focus:outline-none focus:shadow-outline"
             type="button">
             Sign in
           </button>
+          </router-link>
+         
         </div>
       </form>
     </div>

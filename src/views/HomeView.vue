@@ -58,7 +58,7 @@
 
         <div class="w-full max-w-screen-lg py-8 mx-auto">
           <h2 class="py-10 text-lg text-bold" style="text-align:center; text-transform:uppercase;">Brands</h2>
-          <img src=""
+          <img src="https://wholesale.stylekorean.com/Content/img/main_banner_pc.jpg?v20201112001"
             class="d-block w-100 visible-lg visible-md visible-sm" style="" alt="..." usemap="#brands_logo">
           <div class="flex flex-col items-center py-10 md:text-center">
             <button class="px-4 py-2 text-lg font-semibold border-b-4 border-gray-300 md:mr-4 focus:outline-none"
@@ -109,7 +109,7 @@
                 <!-- <p class="mt-1 text-sm text-slate-400">Lisbon, Portugal</p> -->
 
                 <div class="flex items-end justify-between mt-3">
-                  <p class="text-lg font-bold text-[#826B9F]">${{product?.prices[0]?.price || 0}}</p>
+                  <p class="text-lg font-bold text-[#ed495d]">${{product?.prices[0]?.price || 0}}</p>
 
                   <!-- <div
                     class="flex items-center space-x-1.5 rounded-lg bg-[#826B9F] hover:bg-[#B0A3C0] px-4 py-1.5 text-white duration-100 ">

@@ -45,10 +45,10 @@ export default {
 </script>
 
 <template>
-    <div class="flex items-center justify-center min-h-screen px-5 py-5 bg-gray-900 min-w-screen">
+    <div class="flex items-center justify-center min-h-screen px-5 py-5 min-w-screen">
         <div class="w-full overflow-hidden text-gray-500 bg-gray-100 shadow-xl rounded-3xl" style="max-width:1000px">
             <div class="w-full md:flex">
-                <div class="hidden md:block w-1/2 bg-[#615946] py-10 px-10">
+                <div class="hidden md:block w-1/2 bg-[rgb(199,116,116)] py-10 px-10">
                     <svg id="a87032b8-5b37-4b7e-a4d9-4dbfbe394641" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
                         width="100%" height="auto" viewBox="0 0 744.84799 747.07702">
                         <path id="fa3b9e12-7275-481e-bee9-64fd9595a50d" data-name="Path 1"
@@ -125,7 +125,7 @@ export default {
                         <path id="bfd7963f-0cf8-4885-9d3a-2c00bccda2e3" data-name="Path 102"
                             d="M889.99122,467.53052c-3.06-2.44837-7.23517,2.00173-7.23517,2.00173l-2.4484-22.03349s-15.30095,1.8329-25.0935-.61161-11.32255,8.87513-11.32255,8.87513a78.57978,78.57978,0,0,1-.30582-13.77092c.61158-5.50838,8.56838-11.01675,22.6451-14.68932S887.6518,439.543,887.6518,439.543C897.44542,444.43877,893.05121,469.97891,889.99122,467.53052Z"
                             transform="translate(-227.576 -76.46149)" fill="#2f2e41" />
-                    </svg> -->
+                    </svg> 
                 </div>
                 <div class="w-full px-5 py-10 md:w-1/2 md:px-10">
                     <div class="mb-10 text-center">
@@ -219,7 +219,7 @@ export default {
                         <div class="w-full px-3 mb-5">
 
                             <button v-on:click="onSubmit" id="onSubmit" type="submit"
-                                class="block w-full max-w-xs mx-auto bg-[#826B9F] hover:bg-[#B0A3C0]focus:bg-[#B0A3C0] text-white rounded-lg px-3 py-3 font-semibold">REGISTER
+                                class="block w-full max-w-xs mx-auto bg-[#e23b3b] hover:bg-[#B0A3C0]focus:bg-[#B0A3C0] text-white rounded-lg px-3 py-3 font-semibold">REGISTER
                                 NOW</button>
 
 
