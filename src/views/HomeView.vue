@@ -165,8 +165,7 @@ export default {
       selectedProduct: null,
       price: "",
       source: "",
-      Cartdata:[]
-
+      Cartdata:localStorage.getItem('CartData')?JSON.parse(localStorage.getItem('CartData')):[]
     }
   },
   async mounted() {

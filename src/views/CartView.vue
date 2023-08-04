@@ -61,11 +61,9 @@
 
             <div class="p-3 con">
                 <div class="btn d-flex justify-content-between">
-                    <div class="btn-one">
-                        <button type="button" class="btn">
-                            <div class="conti">Continue shopping</div>
-                        </button>
-                    </div>
+                    <button type="button" class="btn btn-one"  :disabled="data.length<=0">
+                        <div class="conti">Continue shopping</div>
+                    </button>
                     <div class="btn-two">
                         <router-link to="addcart">
                             <button type="button" class="btn">
@@ -84,7 +82,7 @@
 <script setup>
 import {ref} from 'vue'
 const data=ref([])
-data.value=JSON.parse(localStorage.getItem("CartData"))
+data.value=localStorage.getItem("CartData")?JSON.parse(localStorage.getItem("CartData")):[]
 </script>
 
 <style>
@@ -140,4 +138,13 @@ h3 {
 .view {
     color: white;
 }
+
+
+button:disabled{
+    background-color: #d8d8d8 !important ;
+    color: #979797  !important;
+    cursor: not-allowed  !important;
+    pointer-events: all  !important;
+}
+
 </style>
