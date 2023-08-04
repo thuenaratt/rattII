@@ -1,6 +1,6 @@
 var product = {
   async create({ title, category, item, imageUrl, desc }) {
-    const res = await fetch("http://localhost:3001/product/create", {
+    const res = await fetch("https://beauty-narrat-store.onrender.com/product/create", {
       method: "POST",
       // credentials: "include",
       headers: {
@@ -13,7 +13,7 @@ var product = {
     return result;
   },
   async all() {
-    const res = await fetch("http://localhost:3001/product/all", {
+    const res = await fetch("https://beauty-narrat-store.onrender.com/product/all", {
       method: "GET",
       // credentials: "include",
       headers: {

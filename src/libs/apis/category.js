@@ -1,6 +1,6 @@
 var category = {
   async create({ name, desc, imageUrl }) {
-    const res = await fetch("http://localhost:3001/category/create", {
+    const res = await fetch("https://beauty-narrat-store.onrender.com/category/create", {
       method: "POST",
       credentials: "include",
       headers: {
@@ -15,7 +15,7 @@ var category = {
 
   async update({id, name, desc, imageUrl}) {
     
-    const res = await fetch(`http://localhost:3001/category/update/${id}`,{
+    const res = await fetch(`https://beauty-narrat-store.onrender.com/category/update/${id}`,{
       method: "POST",
       credentials: "include",
       headers: {
@@ -34,7 +34,7 @@ var category = {
  
 
   async all() {
-    const res = await fetch("http://localhost:3001/category/all", {
+    const res = await fetch("https://beauty-narrat-store.onrender.com/category/all", {
       method: "GET",
       // credentials: "include",
       headers: {

@@ -15,7 +15,7 @@ export default {
         async onSubmit() {
             //   e.preventDefault();
             console.log("called")
-            const res = await fetch("http://localhost:3001/auth/register", {
+            const res = await fetch("https://beauty-narrat-store.onrender.com/auth/register", {
                 method: "POST",
                 headers: {
                     "Content-type": "application/json",

@@ -1,6 +1,6 @@
 var auth = {
   async getMe() {
-    const res = await fetch("http://localhost:3001/auth/me", {
+    const res = await fetch("https://beauty-narrat-store.onrender.com/auth/me", {
       method: "GET",
       credentials: "include",
       headers: {
@@ -14,7 +14,7 @@ var auth = {
     return result;
   },
   async logout() {
-    const res = await fetch("http://localhost:3001/auth/logout", {
+    const res = await fetch("https://beauty-narrat-store.onrender.com/auth/logout", {
       method: "POST",
       credentials: "include",
       headers: {

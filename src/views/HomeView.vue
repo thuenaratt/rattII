@@ -82,7 +82,7 @@
                 <img
                   :src="product.imageUrl"
                   alt=""
-                  onerror="this.onerror=null; this.src='/PlaceholderImg.png'">
+                  onerror="this.onerror=null; this.src='public/PlaceholderImg.png'">
                 <img :src="product.imageUrl" alt="Hotel Photo" />
                 <div
                   class="absolute inset-0 flex items-center justify-center transition duration-300 bg-black bg-opacity-50 opacity-0 hover:opacity-100">
