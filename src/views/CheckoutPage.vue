@@ -40,24 +40,15 @@
                 <p class="text-xl font-medium">Order Summary</p>
                 <p class="text-gray-400">Check your items. And select a suitable shipping method.</p>
                 <div class="px-2 py-4 mt-8 space-y-3 bg-white border rounded-lg sm:px-6">
-                    <div class="flex flex-col bg-white rounded-lg sm:flex-row">
+
+                    <div v-for="item ,index in dataCart" :key="index" class="flex flex-col bg-white rounded-lg sm:flex-row">
                         <img class="object-cover object-center h-24 m-2 border rounded-md w-28"
-                            src="https://cimgr.thebeaulife.co/cimg/f_jpg,w_450,c_fit/img/innisfree_Green_Tea_Line_New_Formula_Singapore_(4).jpg"
+                            :src="item.imageUrl"
                             alt="" />
                         <div class="flex flex-col w-full px-4 py-4">
-                            <span class="font-semibold">Nike Air Max Pro 8888 - Super Light</span>
-                            <span class="float-right text-gray-400">8.5US</span>
-                            <p class="text-lg font-bold">$138.99</p>
-                        </div>
-                    </div>
-                    <div class="flex flex-col bg-white rounded-lg sm:flex-row">
-                        <img class="object-cover object-center h-24 m-2 border rounded-md w-28"
-                            src="https://img.shoplineapp.com/media/image_clips/62f3d6796d36e800225a44c4/original.jpeg?1660147320"
-                            alt="" />
-                        <div class="flex flex-col w-full px-4 py-4">
-                            <span class="font-semibold">Nike Air Max Pro 8888 - Super Light</span>
-                            <span class="float-right text-gray-400">8.5US</span>
-                            <p class="mt-auto text-lg font-bold">$238.99</p>
+                            <span class="font-semibold">{{item.name}}</span>
+                            <span class="float-right text-gray-400">${{item.price}}</span>
+                            <p class="mt-auto text-lg font-bold">${{item.qty * item.price}}</p>
                         </div>
                     </div>
                 </div>
@@ -183,9 +174,40 @@
                         <p class="text-2xl font-semibold text-gray-900">$408.00</p>
                     </div>
                 </div>
-                <button class="w-full px-6 py-3 mt-4 mb-8 font-medium text-white bg-gray-900 rounded-md">Place
+                <button class="w-full px-6 py-3 mt-4 mb-8 font-medium text-white bg-gray-900 rounded-md" @click="PlaceOrder">Place
                     Order</button>
             </div>
         </div>
     </div>
 </template>
+
+
+<script setup>
+
+import {inject} from "vue";
+import orders from "../libs/apis/order"
+
+const route=inject('router')
+
+const dataCart=localStorage.getItem("CartData")? JSON.parse(localStorage.getItem("CartData")): []
+const PlaceOrder=()=>{
+    const ProductGonnaCheckout=[]
+    dataCart.forEach(item=>{
+        ProductGonnaCheckout.push({
+            productId:item.id,
+            qyt:item.qty,
+            description:""
+        })
+    })
+    orders.create({
+        products:ProductGonnaCheckout
+    }).then(res=> {
+        if(res.success){
+            alert("Checkout Successfull");
+            localStorage.removeItem('CartData')
+            route.push('/')
+        }
+    })
+}
+
+</script>

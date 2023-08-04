@@ -109,7 +109,7 @@
                 <!-- <p class="mt-1 text-sm text-slate-400">Lisbon, Portugal</p> -->
 
                 <div class="flex items-end justify-between mt-3">
-                  <p class="text-lg font-bold text-[#826B9F]">$850</p>
+                  <p class="text-lg font-bold text-[#826B9F]">${{product?.prices[0]?.price || 0}}</p>
 
                   <!-- <div
                     class="flex items-center space-x-1.5 rounded-lg bg-[#826B9F] hover:bg-[#B0A3C0] px-4 py-1.5 text-white duration-100 ">
@@ -184,11 +184,11 @@ export default {
     },
     saveToLocal(data){
       this.Cartdata.push({
-        
+        id:data._id,
         name:data.title,
         qty:1,
-        subTotal:41,
-        image:data.imageUrl
+        image:data.imageUrl,
+        price:data?.prices[0]?.price || 0
          
       })
       // console.log(data)

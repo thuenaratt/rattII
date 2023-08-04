@@ -42,7 +42,7 @@
                             <h5>Quantity {{item.qty}}</h5>
                         </div>
                         <div class="mt-5">
-                            <h5 class="prise">$ {{item.subTotal}}</h5>
+                            <h5 class="prise">$ {{item.price * item.qty}}</h5>
                         </div>
                     </div>
                 </div>

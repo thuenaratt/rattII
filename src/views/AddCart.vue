@@ -104,7 +104,10 @@
                     <div class="btn">
                         <div class="btn-one">
                             <button type="button" class="btn">
-                                <div class="text-uppercase check">ADD</div>
+                                <router-link to="checkout">
+                                    <div class="text-uppercase check">ADD</div>
+                                </router-link>
+                               
                             </button>
                         </div>
                     </div>

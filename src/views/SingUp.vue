@@ -15,7 +15,7 @@ export default {
         async onSubmit() {
             //   e.preventDefault();
             console.log("called")
-            const res = await fetch("https://beauty-narrat-store.onrender.com/auth/register", {
+            const res = await fetch("http://localhost:3001/auth/register", {
                 method: "POST",
                 headers: {
                     "Content-type": "application/json",
@@ -48,7 +48,7 @@ export default {
     <div class="flex items-center justify-center min-h-screen px-5 py-5 bg-gray-900 min-w-screen">
         <div class="w-full overflow-hidden text-gray-500 bg-gray-100 shadow-xl rounded-3xl" style="max-width:1000px">
             <div class="w-full md:flex">
-                <div class="hidden md:block w-1/2 bg-[#B0A3C0] py-10 px-10">
+                <div class="hidden md:block w-1/2 bg-[#615946] py-10 px-10">
                     <svg id="a87032b8-5b37-4b7e-a4d9-4dbfbe394641" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
                         width="100%" height="auto" viewBox="0 0 744.84799 747.07702">
                         <path id="fa3b9e12-7275-481e-bee9-64fd9595a50d" data-name="Path 1"
